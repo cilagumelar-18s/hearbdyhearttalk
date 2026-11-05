@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teman Dengar - Jasa Curhat Gratis & Rahasia</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                        },
+                        warm: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            500: '#f59e0b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 50%, #fef3c7 100%);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 flex flex-col min-h-screen selection:bg-teal-100 selection:text-teal-900">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-200/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-full bg-teal-500 text-white flex items-center justify-center font-bold text-xl shadow-md">
+                    <i data-lucide="heart" class="w-5 h-5 fill-current"></i>
+                </div>
+                <span class="font-bold text-xl text-slate-800 tracking-tight">Teman<span class="text-teal-600">Dengar</span></span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="#tentang" class="hover:text-teal-600 transition">Mengapa Kami</a>
+                <a href="#cara-kerja" class="hover:text-teal-600 transition">Cara Curhat</a>
+                <a href="#keunggulan" class="hover:text-teal-600 transition">Privasi</a>
+                <a href="#faq" class="hover:text-teal-600 transition">FAQ</a>
+            </nav>
+            <div>
+                <a href="https://wa.me/62895621470804?text=Halo%20Teman%20Dengar,%20aku%20mau%20curhat%20dong..." 
+                   target="_blank"
+                   class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm px-4 py-2.5 rounded-full transition shadow-sm hover:shadow-md">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    <span>Curhat Sekarang</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 gradient-bg overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Text Content -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-100/80 text-emerald-800 text-xs font-semibold mb-6 border border-emerald-200">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        100% Gratis & Selalu Ada Untukmu
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight tracking-tight mb-6">
+                        Punya beban di hati? <br class="hidden sm:inline">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600">Tumpahkan semuanya di sini.</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Kami paham kadang kamu hanya butuh seseorang yang benar-benar mendengarkan tanpa menghakimi. Bebas bercerita tentang apa saja, kapan saja, secara <strong>gratis</strong>.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="https://wa.me/62895621470804?text=Halo,%20aku%20butuh%20teman%20cerita.%20Bisa%20bantu%20dengar?" 
+                           target="_blank" 
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-8 py-4 rounded-2xl transition shadow-lg shadow-emerald-600/20 hover:scale-[1.02]">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                            <span>Mulai Curhat Gratis</span>
+                        </a>
+                        <a href="#form-curhat" 
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/80 hover:bg-white text-slate-700 font-semibold text-base px-6 py-4 rounded-2xl transition border border-slate-200">
+                            <span>Isi Pesan Dulu</span>
+                            <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <div class="mt-8 flex items-center justify-center lg:justify-start gap-6 text-xs text-slate-500 font-medium">
+                        <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i> Privasi Dijamin</span>
+                        <span class="flex items-center gap-1.5"><i data-lucide="smile" class="w-4 h-4 text-emerald-600"></i> Tanpa Penghakiman</span>
+                        <span class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4 text-emerald-600"></i> Respon Cepat</span>
+                    </div>
+                </div>
+
+                <!-- Form Card Quick Chat -->
+                <div class="lg:col-span-5" id="form-curhat">
+                    <div class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl relative border border-white">
+                        <div class="absolute -top-3 -right-3 bg-amber-400 text-slate-900 font-bold text-xs px-3 py-1 rounded-full shadow">
+                            Free / Gratis
+                        </div>
+                        <h2 class="text-xl font-bold text-slate-800 mb-2">Mulai Bicara Hari Ini</h2>
+                        <p class="text-xs text-slate-500 mb-6">Tuliskan ringkasan ceritamu atau langsung klik tombol WhatsApp di bawah.</p>
+                        
+                        <form id="chatForm" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Nama Panggilan / Inisial</label>
+                                <input type="text" id="namaInput" placeholder="Contoh: Budi / Anonim" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm bg-white/80">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Topik yang Ingin Diceritakan</label>
+                                <select id="topikInput" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm bg-white/80">
+                                    <option value="Percintaan & Hubungan">Percintaan & Hubungan</option>
+                                    <option value="Masalah Pekerjaan / Karir">Masalah Pekerjaan / Karir</option>
+                                    <option value="Keluarga & Pertemanan">Keluarga & Pertemanan</option>
+                                    <option value="Kecemasan / Stress">Kecemasan / Stress</option>
+                                    <option value="Hanya Ingin Disapa & Didengar">Hanya Ingin Disapa & Didengar</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Pesan Awal (Opsional)</label>
+                                <textarea id="pesanInput" rows="3" placeholder="Tuliskan sedikit keluh kesahmu di sini..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm bg-white/80 resize-none"></textarea>
+                            </div>
+                            <button type="button" onclick="kirimKeWA()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl transition flex items-center justify-center gap-2 shadow-md">
+                                <i data-lucide="send" class="w-4 h-4"></i>
+                                <span>Kirim Cerita via WhatsApp</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Kenapa Harus Curhat Di Sini? -->
+    <section id="tentang" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-teal-600 mb-2">Mengapa Memilih Kami</h2>
+                <p class="text-2xl sm:text-3xl font-bold text-slate-900">Tempat Aman Bagi Pikiranmu yang Lelah</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="lock" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">100% Rahasia & Aman</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Identitas dan isi percakapanmu dijamin aman. Kamu tidak perlu menyertakan nama asli jika merasa ragu.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="gift" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Sepenuhnya Gratis</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Tidak ada biaya tersembunyi, tidak perlu berlangganan. Layanan ini dibuat murni untuk saling mendukung sesama.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Tanpa Penghakiman</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Apapun masalahmu, kami ada untuk mendengarkan dengan penuh empati tanpa menyalahkan atau mengkritik pilihanmu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cara Kerja -->
+    <section id="cara-kerja" class="py-16 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-teal-600 mb-2">Langkah Mudah</h2>
+                <p class="text-2xl sm:text-3xl font-bold text-slate-900">Cara Memulai Curhat</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center relative">
+                    <div class="w-10 h-10 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4">1</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Klik Tombol WhatsApp</h4>
+                    <p class="text-sm text-slate-500">Gunakan tombol yang tersedia di website ini untuk terhubung langsung ke WhatsApp kami.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center relative">
+                    <div class="w-10 h-10 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4">2</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Sapa & Ceritakan</h4>
+                    <p class="text-sm text-slate-500">Mulai dengan menyapa atau langsung tuliskan apa saja yang mengganggu pikiranmu saat ini.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center relative">
+                    <div class="w-10 h-10 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4">3</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Didengarkan & Diberi Tanggapan</h4>
+                    <p class="text-sm text-slate-500">Kami akan merespon cerita kamu dengan penuh empati dan perhatian secepat mungkin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-teal-600 mb-2">Pertanyaan Umum</h2>
+                <p class="text-2xl sm:text-3xl font-bold text-slate-900">Sering Ditanyakan (FAQ)</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="p-5 rounded-xl border border-slate-200 bg-slate-50">
+                    <h3 class="font-bold text-slate-800 mb-1">Apakah benar-benar 100% gratis?</h3>
+                    <p class="text-sm text-slate-600">Ya, benar-benar gratis. Kami tidak meminta imbalan finansial dalam bentuk apapun.</p>
+                </div>
+                <div class="p-5 rounded-xl border border-slate-200 bg-slate-50">
+                    <h3 class="font-bold text-slate-800 mb-1">Apakah saya harus pakai nama asli?</h3>
+                    <p class="text-sm text-slate-600">Tidak wajib. Anda boleh menggunakan nama samaran atau inisial untuk menjaga kerahasiaan identitas Anda.</p>
+                </div>
+                <div class="p-5 rounded-xl border border-slate-200 bg-slate-50">
+                    <h3 class="font-bold text-slate-800 mb-1">Apakah ini pengganti psikolog profesional?</h3>
+                    <p class="text-sm text-slate-600">Layanan ini berfungsi sebagai pendengar dan teman berbagi cerita (peer support). Jika Anda mengalami kondisi medis atau krisis psikologis serius, kami sangat menyarankan untuk menghubungi psikiater atau psikolog profesional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="py-12 bg-emerald-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-4">Jangan Dipendam Sendirian</h2>
+            <p class="text-emerald-100 mb-8 max-w-xl mx-auto text-sm sm:text-base">
+                Berbagi beban cerita bisa membuat hatimu jauh lebih ringan. Hubungi WhatsApp kami sekarang!
+            </p>
+            <a href="https://wa.me/62895621470804?text=Halo,%20aku%20mau%20cerita..." 
+               target="_blank"
+               class="inline-flex items-center gap-2 bg-white text-emerald-700 hover:bg-emerald-50 font-bold px-8 py-3.5 rounded-full transition shadow-lg">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                <span>Chat via WhatsApp (+62 895 6214-70804)</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 text-center text-xs">
+            <p class="mb-2">&copy; 2026 TemanDengar. Layanan Jasa Curhat Gratis & Tempat Berbagi Cerita.</p>
+            <p class="text-slate-500">Hubungi WhatsApp: +62 895 6214-70804</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Redirect Form to WhatsApp
+        function kirimKeWA() {
+            const nama = document.getElementById('namaInput').value.trim() || 'Anonim';
+            const topik = document.getElementById('topikInput').value;
+            const pesan = document.getElementById('pesanInput').value.trim();
+
+            let teksWA = `Halo Teman Dengar,%0A%0A`;
+            teksWA += `*Nama/Inisial:* ${encodeURIComponent(nama)}%0A`;
+            teksWA += `*Topik:* ${encodeURIComponent(topik)}%0A`;
+            if (pesan) {
+                teksWA += `*Pesan:* ${encodeURIComponent(pesan)}%0A`;
+            }
+            teksWA += `%0A%0AAku mau curhat dong...`;
+
+            const noWA = "62895621470804";
+            const url = `https://wa.me/${noWA}?text=${teksWA}`;
+
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+  </html>
